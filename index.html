@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h2>sign up</h2>
+    <label for="student"><b>student Name</b></label>
+    <input type="text" placeholder="Enter name" id="username">
+
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="password" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" id="psw-repeat" required>
+
+    <button type="submit" id="btn-signUp">signup</button>
+    <label>
+      <input type="checkbox" checked="checked" id="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+
+<div class="login">
+    <h2>LOGIN</h2>
+   
+    <form action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="./image/avatar.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="login-name" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="login-password" required>
+              
+          <button type="submit" id="btn-login">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+</div>
+
+
+
+</div>
+<script type="module" src="./config.js"></script>
+<script type = "module" src="./app.js"></script>
+
+
+</body>
+</html>
